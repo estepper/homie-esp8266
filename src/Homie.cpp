@@ -46,7 +46,7 @@ HomieClass::HomieClass()
 HomieClass::~HomieClass() {
 }
 
-void HomieClass::_checkBeforeSetup(const __FlashStringHelper* functionName) const {
+void HomieClass::_checkBeforeSetup(const String& functionName) const {
   if (_setupCalled) {
     String message;
     message.concat(F("✖ "));

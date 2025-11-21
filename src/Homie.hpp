@@ -89,7 +89,7 @@ class HomieClass {
   Config _config;
   AsyncMqttClient _mqttClient;
 
-  void _checkBeforeSetup(const __FlashStringHelper* functionName) const;
+  void _checkBeforeSetup(const String& functionName) const;
 
   const char* __HOMIE_SIGNATURE;
 };
